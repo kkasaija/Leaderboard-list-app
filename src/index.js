@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 
-import {addScore} from './modules/addScore.js';
+import addScore from './modules/addScore.js';
 const submit =document.getElementById('submit');
 
 
