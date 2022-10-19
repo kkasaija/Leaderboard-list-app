@@ -1,13 +1,12 @@
-const name = document.getElementById('name');
-const score = document.getElementById('score');
 const list = document.querySelector('.list');
 
-const addScore = () => {
-  if ((name.value.length >= 1) && (score.value.length >= 1)) {
-    const newList = document.createElement('li');
-    newList.classList.add('listItem');
-    newList.innerText = `${name.value}:  ${score.value}`;
-    list.appendChild(newList);
-  }
+const renderScores = (allMembers) => {
+  const allUsers = (allMembers.result);
+  let items = '';
+  allUsers.forEach((allUsers, index) => {
+    items += `<p class="${index % 2 !== 0 ? 'item' : 'item1'}">${allUsers.user}:<span> ${allUsers.score}</span></p>`;
+    list.innerHTML = items;
+  });
 };
-module.exports = addScore;
+
+module.exports = renderScores;
