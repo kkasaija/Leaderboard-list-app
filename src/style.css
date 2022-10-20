@@ -1,15 +1,28 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+}
+
 .globalWrapper {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
+  height: 100vh;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(193, 193, 193, 0.07746848739495793) 100%);
 }
 
 .heading {
   display: flex;
   align-items: center;
   height: 40px;
+  margin-left: 8vw;
   margin-top: 9vh;
-  margin-left: 8%;
+  margin-bottom: 3vh;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 .contentWrapper {
@@ -38,11 +51,6 @@
   margin: 0;
 }
 
-.refresh {
-  height: auto;
-  box-shadow: 2px 3px;
-}
-
 .scoreList {
   width: inherit;
 }
@@ -52,13 +60,28 @@
   list-style: none;
   padding: 0;
   border: solid black;
-  border-width: 1px;
+  border-width: 2px;
   max-height: 50vh;
   overflow-y: scroll;
 }
 
+.listItem {
+  display: flex;
+  margin: 1px;
+  height: 30px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
 .listItem:nth-child(even) {
   background-color: lightgrey;
+}
+
+.listItem:nth-child(odd) {
+  background-color: #fff;
 }
 
 .form {
@@ -77,11 +100,21 @@
   justify-content: flex-end;
 }
 
-.button button {
-  box-shadow: 2px 3px;
+button {
+  display: flex;
+  align-items: center;
+  font-family: 'Patrick Hand', cursive;
+  width: fit-content;
+  height: 32px;
+  font-size: 22px;
 }
 
 input {
+  font-family: 'Patrick Hand', cursive;
   margin-bottom: 15px;
-  height: 20px;
+  height: 35px;
+  border-radius: 5px;
+  border-width: 2px;
+  padding-left: 10px;
+  font-size: 20px;
 }
