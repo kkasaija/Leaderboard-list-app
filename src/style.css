@@ -1,0 +1,87 @@
+.globalWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 9vh;
+  margin-left: 8%;
+}
+
+.contentWrapper {
+  box-sizing: border-box;
+  display: flex;
+  width: inherit;
+  align-items: baseline;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.scoreHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.scoreHeader h3 {
+  margin: 0;
+}
+
+.refresh {
+  height: auto;
+  box-shadow: 2px 3px;
+}
+
+.scoreList {
+  width: inherit;
+}
+
+.list {
+  width: inherit;
+  list-style: none;
+  padding: 0;
+  border: solid black;
+  border-width: 1px;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.listItem:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.form {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.formcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button button {
+  box-shadow: 2px 3px;
+}
+
+input {
+  margin-bottom: 15px;
+  height: 20px;
+}
